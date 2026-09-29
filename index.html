@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contaminación global</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <strong data-it="Pianeta Pulito">Planeta Limpio</strong>
+  <nav>
+    <a href="#causas" data-it="Cause">Causas</a>
+    <a href="#consecuencias" data-it="Conseguenze">Consecuencias</a>
+    <a href="#soluciones" data-it="Soluzioni">Soluciones</a>
+  </nav>
+  <div class="botones">
+    <button id="btnColor" onclick="cambiarColor()" data-it="Cambia colore">Cambiar color</button>
+    <button id="btnIdioma" onclick="cambiarIdioma()">Italiano 🇮🇹</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-texto">
+    <h1 data-it="L'inquinamento globale non aspetta">La contaminación global no espera</h1>
+    <p data-it="Aria, acqua e suolo: il pianeta è sotto pressione. Capirlo è il primo passo per cambiarlo.">Aire, agua y suelo: el planeta está bajo presión. Entenderlo es el primer paso para cambiarlo.</p>
+    <a class="cta" href="#causas" data-it="Scopri di più">Descubrí más</a>
+  </div>
+  <svg class="hero-img" viewBox="0 0 400 300" role="img" aria-label="Fábrica con humo sobre la Tierra">
+    <circle cx="200" cy="290" r="150" class="tierra"/>
+    <path d="M120 200 q30-40 70-20 t60 10 t40-20" class="continente"/>
+    <rect x="130" y="130" width="140" height="70" class="fabrica"/>
+    <rect x="145" y="80" width="22" height="55" class="fabrica"/>
+    <rect x="235" y="95" width="22" height="40" class="fabrica"/>
+    <circle cx="156" cy="70" r="16" class="humo"/><circle cx="175" cy="48" r="22" class="humo"/><circle cx="205" cy="34" r="26" class="humo"/>
+    <circle cx="246" cy="85" r="14" class="humo"/><circle cx="262" cy="62" r="20" class="humo"/><circle cx="292" cy="46" r="24" class="humo"/>
+  </svg>
+</section>
+
+<section id="tipos">
+  <h2 data-it="Tipi di inquinamento">Tipos de contaminación</h2>
+  <div class="tarjetas">
+    <article><span>🏭</span><h3 data-it="Aria">Aire</h3><p data-it="Gas e particelle da fabbriche, auto e incendi. Secondo l'OMS causa circa 7 milioni di morti premature all'anno.">Gases y partículas de fábricas, autos e incendios. Según la OMS causa unas 7 millones de muertes prematuras al año.</p></article>
+    <article><span>🌊</span><h3 data-it="Acqua">Agua</h3><p data-it="Rifiuti, plastica e sostanze chimiche arrivano a fiumi e oceani, ogni anno milioni di tonnellate di plastica.">Residuos, plástico y químicos llegan a ríos y océanos: millones de toneladas de plástico por año.</p></article>
+    <article><span>🌱</span><h3 data-it="Suolo">Suelo</h3><p data-it="Pesticidi, discariche e metalli pesanti degradano la terra e le colture.">Pesticidas, basurales y metales pesados degradan la tierra y los cultivos.</p></article>
+  </div>
+</section>
+
+<section id="causas" class="oscura">
+  <h2 data-it="Cause principali">Causas principales</h2>
+  <ul class="lista">
+    <li data-it="🔥 Combustibili fossili: petrolio, carbone e gas per energia e trasporti.">🔥 Combustibles fósiles: petróleo, carbón y gas para energía y transporte.</li>
+    <li data-it="🏗️ Industria e agricoltura intensiva, con scarichi e fertilizzanti chimici.">🏗️ Industria y agricultura intensiva, con vertidos y fertilizantes químicos.</li>
+    <li data-it="🛍️ Consumo eccessivo e plastica monouso che diventa rifiuto in pochi minuti.">🛍️ Consumo excesivo y plástico de un solo uso que es basura en minutos.</li>
+    <li data-it="🌳 Deforestazione: meno alberi significa meno aria pulita.">🌳 Deforestación: menos árboles significa menos aire limpio.</li>
+  </ul>
+</section>
+
+<section id="consecuencias">
+  <h2 data-it="Conseguenze">Consecuencias</h2>
+  <div class="tarjetas">
+    <article class="rojo"><span>🌡️</span><h3 data-it="Cambiamento climatico">Cambio climático</h3><p data-it="Più gas serra: temperature in aumento, ghiacciai che si sciolgono e eventi estremi.">Más gases de efecto invernadero: suba de temperaturas, glaciares que se derriten y eventos extremos.</p></article>
+    <article class="rojo"><span>🫁</span><h3 data-it="Salute">Salud</h3><p data-it="Malattie respiratorie e cardiache, soprattutto in bambini e anziani.">Enfermedades respiratorias y cardíacas, sobre todo en niños y adultos mayores.</p></article>
+    <article class="rojo"><span>🐢</span><h3 data-it="Biodiversità">Biodiversidad</h3><p data-it="Animali marini intrappolati o intossicati dalla plastica; ecosistemi in pericolo.">Animales marinos atrapados o intoxicados por plástico; ecosistemas en peligro.</p></article>
+  </div>
+</section>
+
+<section id="soluciones" class="verde">
+  <h2 data-it="Cosa possiamo fare">Qué podemos hacer</h2>
+  <div class="tarjetas">
+    <article><span>♻️</span><h3 data-it="Ridurre e riciclare">Reducir y reciclar</h3><p data-it="Separa i rifiuti, riusa e scegli prodotti con meno imballaggi.">Separá los residuos, reutilizá y elegí productos con menos envases.</p></article>
+    <article><span>🚲</span><h3 data-it="Muoversi meglio">Moverse mejor</h3><p data-it="Bici, trasporto pubblico o a piedi al posto dell'auto quando puoi.">Bici, transporte público o caminar en lugar del auto cuando se pueda.</p></article>
+    <article><span>☀️</span><h3 data-it="Energia pulita">Energía limpia</h3><p data-it="Sostieni l'energia solare ed eolica e risparmia elettricità a casa.">Apoyar la energía solar y eólica y ahorrar electricidad en casa.</p></article>
+    <article><span>🌳</span><h3 data-it="Piantare alberi">Plantar árboles</h3><p data-it="Ogni albero assorbe CO₂ e migliora l'aria della tua città.">Cada árbol absorbe CO₂ y mejora el aire de tu ciudad.</p></article>
+  </div>
+</section>
+
+<footer>
+  <p data-it="Piccole azioni, moltiplicate per milioni di persone, cambiano il mondo.">Pequeñas acciones, multiplicadas por millones de personas, cambian el mundo.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

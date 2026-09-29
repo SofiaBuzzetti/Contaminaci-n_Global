@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contaminación global</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="logo" href="#inicio" data-it="🌍 Pianeta Pulito">🌍 Planeta Limpio</a>
+  <nav>
+    <a href="#intro" data-it="Introduzione">Introducción</a>
+    <a href="#tipos" data-it="Tipi">Tipos</a>
+    <a href="#causas" data-it="Cause">Causas</a>
+    <a href="#consecuencias" data-it="Conseguenze">Consecuencias</a>
+    <a href="#soluciones" data-it="Soluzioni">Soluciones</a>
+  </nav>
+  <div class="botones">
+    <button id="btnColor" type="button">🎨 Bosque</button>
+    <button id="btnIdioma" type="button">🇮🇹 Italiano</button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div>
+    <h1 data-it="L'inquinamento globale riguarda tutti">La contaminación global nos afecta a todos</h1>
+    <p data-it="Aria, acqua e suolo: il pianeta è sotto pressione. Capire cosa succede è il primo passo per cambiarlo.">Aire, agua y suelo: el planeta está bajo presión. Entender qué pasa es el primer paso para cambiarlo.</p>
+    <a class="cta" href="#intro" data-it="Scopri di più">Descubrí más</a>
+  </div>
+  <svg class="hero-img" viewBox="0 0 400 300" role="img" aria-label="Fábrica con humo sobre la Tierra">
+    <circle cx="330" cy="50" r="28" class="sol"/>
+    <circle cx="200" cy="290" r="150" class="tierra"/>
+    <path d="M120 200 q30-40 70-20 t60 10 t40-20" class="continente"/>
+    <rect x="130" y="130" width="140" height="70" class="fabrica"/>
+    <rect x="145" y="80" width="22" height="55" class="fabrica"/>
+    <rect x="235" y="95" width="22" height="40" class="fabrica"/>
+    <circle cx="156" cy="70" r="16" class="humo"/><circle cx="175" cy="48" r="22" class="humo"/><circle cx="205" cy="34" r="26" class="humo"/>
+    <circle cx="246" cy="85" r="14" class="humo"/><circle cx="262" cy="62" r="20" class="humo"/><circle cx="292" cy="46" r="24" class="humo"/>
+  </svg>
+</section>
+
+<section id="intro" class="ancho">
+  <h2 data-it="Introduzione">Introducción</h2>
+  <p data-it="L'inquinamento è la presenza nell'ambiente di sostanze o energie che danneggiano gli esseri viventi e gli ecosistemi. Non è un problema nuovo, ma dalla Rivoluzione Industriale è cresciuto a un ritmo mai visto: oggi lo troviamo nell'aria delle città, nei fiumi, nei campi e perfino nelle vette più alte e nelle profondità oceaniche.">La contaminación es la presencia en el ambiente de sustancias o formas de energía que dañan a los seres vivos y a los ecosistemas. No es un problema nuevo, pero desde la Revolución Industrial creció a un ritmo nunca visto: hoy la encontramos en el aire de las ciudades, en los ríos, en los campos e incluso en las cumbres más altas y en las profundidades del océano.</p>
+  <p data-it="La buona notizia è che le cause sono conosciute e le soluzioni esistono. In questa pagina vediamo che cos'è l'inquinamento, da dove viene, che danni provoca e cosa possiamo fare, come persone e come società.">La buena noticia es que las causas se conocen y las soluciones existen. En esta página vemos qué es la contaminación, de dónde viene, qué daños provoca y qué podemos hacer, como personas y como sociedad.</p>
+</section>
+
+<section class="datos">
+  <div class="dato"><b class="num" data-n="7" data-d="0">0</b><span>M</span><p data-it="morti premature all'anno per l'inquinamento dell'aria (OMS)">muertes prematuras al año por contaminación del aire (OMS)</p></div>
+  <div class="dato"><b class="num" data-n="99" data-d="0">0</b><span>%</span><p data-it="della popolazione respira aria sopra i limiti OMS">de la población respira aire por encima de los límites de la OMS</p></div>
+  <div class="dato"><b class="num" data-n="8" data-d="0">0</b><span>M t</span><p data-it="di plastica finiscono negli oceani ogni anno (stima)">de plástico llegan a los océanos cada año (estimación)</p></div>
+  <div class="dato"><b class="num" data-n="1.2" data-d="1">0</b><span>°C</span><p data-it="di aumento della temperatura globale rispetto all'era preindustriale">de aumento de la temperatura global respecto a la era preindustrial</p></div>
+</section>
+
+<section id="tipos" class="ancho">
+  <h2 data-it="Tipi di inquinamento">Tipos de contaminación</h2>
+  <div class="tabs" role="tablist">
+    <button class="tab activa" data-tab="aire" data-it="🏭 Aria">🏭 Aire</button>
+    <button class="tab" data-tab="agua" data-it="🌊 Acqua">🌊 Agua</button>
+    <button class="tab" data-tab="suelo" data-it="🌱 Suolo">🌱 Suelo</button>
+    <button class="tab" data-tab="plastico" data-it="🛍️ Plastica">🛍️ Plástico</button>
+  </div>
+  <div class="panel activo" id="aire"><p data-it="L'aria si contamina con anidride carbonica, ossidi di azoto e polveri sottili (PM2,5) emessi da auto, industrie, centrali a carbone e dalla combustione di rifiuti o boschi. Queste particelle entrano nei polmoni e persino nel sangue.">El aire se contamina con dióxido de carbono, óxidos de nitrógeno y partículas finas (PM2,5) que emiten autos, industrias, centrales a carbón y la quema de basura o de bosques. Estas partículas entran en los pulmones y hasta en la sangre.</p></div>
+  <div class="panel" id="agua"><p data-it="Scarichi industriali, acque reflue non trattate, fertilizzanti e plastica finiscono in fiumi, laghi e mari. Provocano moria di pesci, zone senza ossigeno e acqua non potabile.">Vertidos industriales, aguas cloacales sin tratar, fertilizantes y plásticos llegan a ríos, lagos y mares. Provocan mortandad de peces, zonas sin oxígeno y agua no apta para beber.</p></div>
+  <div class="panel" id="suelo"><p data-it="Pesticidi, metalli pesanti, discariche a cielo aperto e sversamenti di petrolio avvelenano la terra. Il suolo perde fertilità e gli inquinanti passano nel cibo e nelle falde.">Pesticidas, metales pesados, basurales a cielo abierto y derrames de petróleo envenenan la tierra. El suelo pierde fertilidad y los contaminantes pasan a los alimentos y al agua subterránea.</p></div>
+  <div class="panel" id="plastico"><p data-it="Ogni anno si producono centinaia di milioni di tonnellate di plastica e gran parte è monouso. Impiega secoli a degradarsi e si frammenta in microplastiche già trovate in acqua, aria e organismi viventi.">Se producen cientos de millones de toneladas de plástico por año y gran parte es de un solo uso. Tarda siglos en degradarse y se fragmenta en microplásticos que ya se encontraron en el agua, el aire y los organismos vivos.</p></div>
+</section>
+
+<section id="causas" class="oscura">
+  <h2 data-it="Cause principali">Causas principales</h2>
+  <div class="tarjetas">
+    <article><span>🔥</span><h3 data-it="Combustibili fossili">Combustibles fósiles</h3><p data-it="Petrolio, carbone e gas per energia e trasporti sono la prima fonte di gas serra.">Petróleo, carbón y gas para energía y transporte son la primera fuente de gases de efecto invernadero.</p></article>
+    <article><span>🏗️</span><h3 data-it="Industria">Industria</h3><p data-it="Fabbriche e miniere emettono fumi e scaricano sostanze chimiche se non sono controllate.">Fábricas y minas emiten humos y vierten químicos cuando no están controladas.</p></article>
+    <article><span>🚜</span><h3 data-it="Agricoltura intensiva">Agricultura intensiva</h3><p data-it="Fertilizzanti e pesticidi in eccesso inquinano suolo e acqua e alimentano le alghe tossiche.">Fertilizantes y pesticidas en exceso contaminan suelo y agua y alimentan algas tóxicas.</p></article>
+    <article><span>🛍️</span><h3 data-it="Consumo e rifiuti">Consumo y residuos</h3><p data-it="Plastica monouso, moda veloce e rifiuti elettronici crescono più della capacità di gestirli.">Plástico de un solo uso, moda rápida y residuos electrónicos crecen más rápido que la capacidad de gestionarlos.</p></article>
+    <article><span>🌳</span><h3 data-it="Deforestazione">Deforestación</h3><p data-it="Tagliare o bruciare boschi libera CO₂ ed elimina i polmoni verdi del pianeta.">Talar o quemar bosques libera CO₂ y elimina los pulmones verdes del planeta.</p></article>
+    <article><span>🚗</span><h3 data-it="Città e traffico">Ciudades y tránsito</h3><p data-it="Milioni di veicoli e un'urbanizzazione senza pianificazione concentrano smog e rumore.">Millones de vehículos y una urbanización sin planificar concentran smog y ruido.</p></article>
+  </div>
+</section>
+
+<section id="consecuencias" class="ancho">
+  <h2 data-it="Conseguenze">Consecuencias</h2>
+  <div class="tarjetas">
+    <article class="rojo"><span>🌡️</span><h3 data-it="Cambiamento climatico">Cambio climático</h3><p data-it="Temperature in aumento, ghiacciai che si sciolgono, livello del mare in crescita, siccità e alluvioni più intense.">Suba de temperaturas, glaciares que se derriten, aumento del nivel del mar, sequías e inundaciones más intensas.</p></article>
+    <article class="rojo"><span>🫁</span><h3 data-it="Salute umana">Salud humana</h3><p data-it="Asma, malattie cardiache, tumori ai polmoni e problemi nello sviluppo dei bambini.">Asma, enfermedades cardíacas, cáncer de pulmón y problemas en el desarrollo de los niños.</p></article>
+    <article class="rojo"><span>🐢</span><h3 data-it="Biodiversità">Biodiversidad</h3><p data-it="Specie in estinzione, coralli che sbiancano e animali intossicati dalla plastica.">Especies en extinción, corales que se blanquean y animales intoxicados por plástico.</p></article>
+    <article class="rojo"><span>💧</span><h3 data-it="Acqua e cibo">Agua y alimentos</h3><p data-it="Meno acqua potabile, raccolti danneggiati e pesce contaminato da metalli e microplastiche.">Menos agua potable, cosechas dañadas y pescado contaminado con metales y microplásticos.</p></article>
+  </div>
+</section>
+
+<section id="soluciones" class="verde">
+  <h2 data-it="Cosa possiamo fare">Qué podemos hacer</h2>
+  <div class="tarjetas">
+    <article><h3 data-it="🙋 Come persone">🙋 Como personas</h3><ul>
+      <li data-it="Ridurre, riusare e riciclare">Reducir, reutilizar y reciclar</li>
+      <li data-it="Usare bici, mezzi pubblici o andare a piedi">Usar bici, transporte público o caminar</li>
+      <li data-it="Risparmiare energia e acqua a casa">Ahorrar energía y agua en casa</li>
+      <li data-it="Comprare meno e riparare di più">Comprar menos y reparar más</li></ul></article>
+    <article><h3 data-it="🏘️ Come comunità">🏘️ Como comunidad</h3><ul>
+      <li data-it="Organizzare pulizie di parchi e spiagge">Organizar limpiezas de parques y playas</li>
+      <li data-it="Creare orti e piantare alberi">Crear huertas y plantar árboles</li>
+      <li data-it="Promuovere la raccolta differenziata nel quartiere">Impulsar la separación de residuos en el barrio</li>
+      <li data-it="Informare e sensibilizzare a scuola">Informar y concientizar en la escuela</li></ul></article>
+    <article><h3 data-it="🏛️ Governi e aziende">🏛️ Gobiernos y empresas</h3><ul>
+      <li data-it="Investire in energie rinnovabili">Invertir en energías renovables</li>
+      <li data-it="Fissare limiti e controlli sulle emissioni">Fijar límites y controles a las emisiones</li>
+      <li data-it="Progettare prodotti riparabili e riciclabili">Diseñar productos reparables y reciclables</li>
+      <li data-it="Proteggere foreste e oceani">Proteger bosques y océanos</li></ul></article>
+  </div>
+</section>
+
+<section id="compromiso" class="ancho">
+  <h2 data-it="Il mio impegno">Mi compromiso</h2>
+  <p data-it="Segna cosa ti impegni a fare questa settimana:">Marcá lo que te comprometés a hacer esta semana:</p>
+  <div class="checks">
+    <label><input type="checkbox"> <span data-it="Portare una borraccia e una borsa riutilizzabile">Llevar botella y bolsa reutilizables</span></label>
+    <label><input type="checkbox"> <span data-it="Separare i rifiuti a casa">Separar los residuos en casa</span></label>
+    <label><input type="checkbox"> <span data-it="Fare un tragitto a piedi o in bici">Hacer un trayecto a pie o en bici</span></label>
+    <label><input type="checkbox"> <span data-it="Spegnere le luci e gli apparecchi che non uso">Apagar luces y aparatos que no uso</span></label>
+    <label><input type="checkbox"> <span data-it="Parlarne con un amico o un familiare">Hablarlo con un amigo o familiar</span></label>
+  </div>
+  <div class="barra"><div id="progreso"></div></div>
+  <p><b id="conteo">0</b>/5 <span data-it="impegni presi">compromisos asumidos</span></p>
+</section>
+
+<footer>
+  <p data-it="Piccole azioni, moltiplicate per milioni di persone, cambiano il mondo.">Pequeñas acciones, multiplicadas por millones de personas, cambian el mundo.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
